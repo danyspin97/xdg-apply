@@ -1,0 +1,14 @@
+$ xdg-apply --session sway
+Move all the files
+Add aliases to .bashrc
+Export env in exec
+
+$ xdg-apply --next-login
+
+$ xdg-apply --now
+Move all the files
+Add aliases to .bashrc
+Export env in .profile
+
+$ xdg-apply --where $path
+

@@ -1,0 +1,77 @@
+ack:
+  files:
+  - old: .ackrc
+    new: ack/ackrc
+    env: ACKRC
+alsa:
+  files:
+  - old: .asoundrc
+    new: alsa/asoundrc
+apvlv:
+  presets:
+  - rc-file
+aria2:
+  files:
+  - old: .aria2/aria2.conf
+    new: aria2/aria2.conf
+  dirs:
+  - old: .aria2
+asunder:
+  files:
+  - old: .asunder
+    new: asunder/asunder
+  - old: .asunder_album_artist
+    new: asunder/asunder_album_artist
+    type: cache
+  - old: .asunder_album_genre
+    new: asunder/asunder_album_genre
+    type: cache
+  - old: .asunder_album_title
+    new: asunder/asunder_album_title
+    type: cache
+atom:
+  dirs:
+  - old: .atom
+    new: atom
+    type: data
+binwalk:
+  presets:
+  - config-dir
+blender:
+  presets:
+  - legacy-dir
+ccache:
+  presets:
+  - config-file
+  dirs:
+  - old: .ccache
+    new: ccache
+    type: cache
+curl:
+  files:
+  - old: .curlrc
+    new: curlrc
+latexmk:
+  presets:
+  - rc-file
+less:
+  files:
+  - old: .lesshst
+    new: lesshst
+    type: state
+  - old: .lesskey
+    new: lesskey
+password-store:
+  dirs:
+  - old: .password-store
+    new: password-store
+    type: data
+    env: PASSWORD_STORE_DIR
+pidgin:
+  dirs:
+  - old: .purple
+    new: purple
+    type: data
+  aliases:
+  - exe: pidgin
+    args: --config=$XDG_DATA_HOME/purple
